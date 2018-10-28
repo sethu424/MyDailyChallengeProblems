@@ -10,7 +10,11 @@ Created on 25-Oct-2018
 @author: sethu
 '''
 
+
 def isSumK(arr, k):
+    '''
+    Approach: If two numbers in the array can sum upto K, then if we find one of them say n1, then the second number, n2 is k-n1. 
+    '''
     reminders = set()
     
     for num in arr:
@@ -19,6 +23,7 @@ def isSumK(arr, k):
         reminders.add(num)
         
     return False
+
 if __name__ == '__main__':
     arr = [10, 15, 3, 7]
     k = 17
